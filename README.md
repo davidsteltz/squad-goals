@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # squad-goals
 
 ## Project setup
@@ -36,4 +36,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 =======
 # squad-goals-vue
 Squad Goals Front End
->>>>>>> 1df39c0231bdf1946c7cc018f208388de5a54ea1
+
