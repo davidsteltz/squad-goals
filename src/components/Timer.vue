@@ -13,7 +13,7 @@
 
 <script>
 import { Subject } from 'rxjs'
-import { skipWhile, scan, filter, takeUntil } from 'rxjs/operators'
+import { scan, filter, takeUntil } from 'rxjs/operators'
 import TimerService, { GlobalTimer } from '../services/TimerService'
 
 let timer$ = new TimerService()
@@ -37,7 +37,6 @@ export default {
       this.timerSub.unsubscribe()
       this.timerSub = timer$.$timer
         .pipe(
-          skipWhile(() => !this.isRunning),
           filter(() => this.isRunning),
           scan((sum) => sum + 1, 0),
           takeUntil(this.destroyed$.asObservable()))
@@ -51,7 +50,6 @@ export default {
 
     this.timerSub = timer$.$timer
       .pipe(
-        skipWhile(() => !this.isRunning),
         filter(() => this.isRunning),
         scan((sum, cur) => sum + 1, 0),
         takeUntil(this.destroyed$.asObservable()))
