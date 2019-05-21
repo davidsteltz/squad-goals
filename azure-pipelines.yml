@@ -31,10 +31,10 @@ steps:
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)/dist'
     Contents: '**'
-    TargetFolder: '%(Build.StagingDirectory)'
+    TargetFolder: '$(Build.StagingDirectory)'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.StagingDirectory)'
     ArtifactName: 'dist'
     publishLocation: 'Container'
