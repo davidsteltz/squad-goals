@@ -26,3 +26,19 @@ steps:
   
 - script: npm run build
   displayName: 'npm build'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'dist'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    OverWrite: true
+
+- task: AzureFileCopy@3
+  inputs:
+    SourcePath: '$(Build.ArtifactStagingDirectory)'
+    azureSubscription: 'Free Trial(5064fccd-afcb-4260-9051-0ab61d64bc70)'
+    Destination: 'AzureBlob'
+    storage: 'squadgoals'
+    ContainerName: '$web'
+    BlobPrefix: '$(Build.DefinitionName)_$(Build.BuildId)-'
