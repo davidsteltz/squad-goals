@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/thisissoftware/This%20is%20Squad%20Goals/_apis/build/status/this-is-squad-goals.squad-goals-vue?branchName=master)](https://dev.azure.com/thisissoftware/This%20is%20Squad%20Goals/_build/latest?definitionId=1&branchName=master)
 
 # squad-goals
 
