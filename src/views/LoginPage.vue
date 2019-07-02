@@ -1,18 +1,21 @@
 <template>
   <div class="home">
 
-    <AuthCard/>
+    <!-- <SignIn/> -->
+    <SignUp/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import AuthCard from "../components/AuthCard";
+import SignIn from "../components/SignIn";
+import SignUp from "../components/SignUp";
 
 export default {
   name: "home",
   components: {
-    AuthCard
+    SignIn,
+    SignUp
   }
 };
 </script>
