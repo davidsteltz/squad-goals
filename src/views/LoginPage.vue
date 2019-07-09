@@ -1,7 +1,7 @@
 <template>
   <div class="home">
 
-    <!-- <SignIn/> -->
+    <SignIn/>
     <SignUp/>
   </div>
 </template>
