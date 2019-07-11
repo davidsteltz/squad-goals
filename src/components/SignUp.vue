@@ -10,31 +10,31 @@
             Name:
             </label>
             <i class="fa fa-user icon"></i>
-            <input class="form-field" name="name" id="name" />
+            <input class="form-field" name="name" id="name" v-model="name"/>
           </div>
           <div class="input-container">
             <label class="form-label" for="email">
             Email:
             </label>
             <i class="fa fa-envelope-open icon"></i>
-            <input class="form-field" name="email" id="email" />
+            <input class="form-field" name="email" id="email" v-model="email"/>
         </div>
         <div class="input-container">
             <label class="form-label" for="password">
             Password:
             </label>
             <i class="fa fa-unlock icon"></i>
-            <input class="form-field" name="password" id="password" />
+            <input class="form-field" name="password" id="password" type="password" v-model="password"/>
         </div>
         <div class="input-container">
             <label class="form-label" for="confirmpassword">
             Confirm Password:
             </label>
             <i class="fa fa-unlock icon"></i>
-            <input class="form-field" name="confirmpassword" id="confirmpassword" />
+            <input class="form-field" name="confirmpassword" id="confirmpassword" type="password" v-model="confirmpassword"/>
         </div>
         <div class="input-container">
-            <input type="checkbox" class="form-field" name="confirmpassword" id="confirmpassword" />
+            <input type="checkbox" class="form-field" name="ageconcent" id="ageconcent" v-model="ageconsent"/>
             <label class="form-label" for="confirmpassword">
             Over 13 years of age?:
             </label>
@@ -49,7 +49,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: {
+    name: "",
+    email: "",
+    password: "",
+    confirmpassword: "",
+    ageconsent: false
+  }
+};
 </script>
 
 <style scoped lang="scss">

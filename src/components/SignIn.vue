@@ -10,14 +10,14 @@
             Email:
             </label>
             <i class="fa fa-envelope-open icon"></i>
-            <input class="form-field" name="email" id="email" />
+            <input class="form-field" name="email" id="email" v-model="name"/>
         </div>
         <div class="input-container">
             <label class="form-label" for="password">
             Password:
             </label>
             <i class="fa fa-unlock icon"></i>
-            <input class="form-field" name="password" id="password" />
+            <input class="form-field" name="password" id="password" type="password" v-model="password"/>
         </div>
         <div class="toggle-form-container">
         Don't have an account? <a @click="toggleSignIn()">Create a new account</a>
@@ -29,7 +29,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: {
+    name: "",
+    email: ""
+  }
+};
 </script>
 
 <style scoped lang="scss">
