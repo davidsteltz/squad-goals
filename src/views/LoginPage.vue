@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
+  <div class="auth-page">
 
-    <SignIn/>
+    <!-- <SignIn/> -->
     <SignUp/>
   </div>
 </template>
@@ -19,3 +19,10 @@ export default {
   }
 };
 </script>
+<style>
+.auth-page {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, #8fe3d9 100%);
+}
+</style>

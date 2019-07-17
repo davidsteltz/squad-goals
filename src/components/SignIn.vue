@@ -39,7 +39,7 @@ export default {
 
 <style scoped lang="scss">
 .auth-container {
-  width: 40%;
+  width: 80%;
 }
 
 // .signin-container {

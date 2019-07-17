@@ -1,14 +1,15 @@
 <template>
-  <div class="card-panel auth-container">
-    <h1 class="title">
-      Sign Up
-    </h1>
-    <div class="">
+  <div class="auth-container">
+    <h5 class="title">
+      Sign Up For Activise
+    </h5>
+    <div class="card-panel">
+    <img class="logo-image" src="../assets/ladderlogo.png" alt="A step ladder logo with a blue background">
       <form name="contact">
           <div class="input-field col s6">
             <i class="material-icons prefix">account_circle</i>
-            <input class="validate" name="name" id="name" v-model="name"/>
-            <label class="icon_prefix" for="name">
+            <input class="form-field" name="name" id="name" v-model="name"/>
+            <label class="form-label" for="name">
             Name:
             </label>
           </div>
@@ -39,10 +40,12 @@
             Over 13 years of age?:
             </label>
         </div>
-        <div class="input-field col s6">
+        <div class="col s6">
             Already have an account? <a @click="toggleSignIn()">Login</a>
-            </div>
+        </div>
+        <div>
             <input class="form-button" type="submit" value="Create Account" />
+            </div>
       </form>
     </div>
   </div>
@@ -62,6 +65,12 @@ export default {
 
 <style scoped lang="scss">
 .auth-container {
-  width: 40%;
+  width: 80%;
+  height: 100%;
+}
+
+.logo-image {
+  border-radius: 50%;
+  width: 30%;
 }
 </style>
