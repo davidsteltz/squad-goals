@@ -23,6 +23,7 @@ export default {
 .auth-page {
   display: flex;
   justify-content: center;
-  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, #8fe3d9 100%);
+  background: linear-gradient(180deg, #8fe3d9 0%, #3a1f70 100%);
+  height: 100vh;
 }
 </style>
