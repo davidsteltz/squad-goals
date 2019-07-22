@@ -6,27 +6,21 @@
     <div class="card-panel">
     <img class="logo-image" src="../assets/activyselogo.png" alt="A step ladder logo">
       <form name="sign-in">
-          <div class="input-field col s6">
-            <i class="material-icons prefix">mail_outline</i>
-            <input class="form-field" name="email" id="email" v-model="email" type="text" required/>
-            <label class="form-label" for="email">
-            Email:
-            </label>
-        </div>
+        <label for="email">Email</label>
         <div class="input-field col s6">
-            <i class="material-icons prefix">lock</i>
-            <input class="form-field" name="password" id="password" type="password" v-model="password" required/>
-            <label class="form-label" for="password">
-            Password:
-            </label>
-        </div>
-
-        <div class="submit">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Sign In
+          <input placeholder="Recieve a Log In Link" id="email" type="text" class="validate" required>
+          <button class="btn waves-effect waves-light submit" type="submit" name="action">Submit
                 <i class="material-icons right">send</i>
             </button>
         </div>
-
+        <div class="row">
+            <a class="waves-effect waves-light btn col s12 social facebook">
+            <i class="fa fa-facebook"></i> Sign in with facebook</a>
+        </div>
+        <div class="row">
+            <a class="waves-effect waves-light btn col s12 social twitter">
+            <i class="fa fa-twitter"></i> Sign in with twitter</a>
+        </div>
       </form>
       <div class="">
             New here? <a @click="toggleSignIn()">Sign Up For An Account</a>
@@ -39,11 +33,8 @@
 export default {
   data: () => ({
     valid: true,
-    name: "",
     email: "",
-    password: "",
-    confirmPassword: "",
-    ageConsent: false
+    password: ""
   })
 };
 </script>
@@ -55,6 +46,10 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+label {
+    float: left;
 }
 
 .title {
@@ -70,6 +65,10 @@ export default {
 }
 
 .submit {
-  margin: 30px 0 30px 0;
+    margin-top: 20px;
+}
+
+.row {
+  margin: 30px 0 20px 0;
 }
 </style>

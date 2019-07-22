@@ -2,7 +2,8 @@
   <div class="auth-page">
 
     <!-- <SignIn/> -->
-    <SignUp/>
+    <!-- <SignUp/> -->
+    <AlternateSignIn/>
   </div>
 </template>
 
@@ -10,10 +11,12 @@
 // @ is an alias to /src
 import SignIn from "../components/SignIn";
 import SignUp from "../components/SignUp";
+import AlternateSignIn from "../components/AlternateSignIn";
 
 export default {
   name: "home",
   components: {
+    AlternateSignIn,
     SignIn,
     SignUp
   }

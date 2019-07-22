@@ -4,32 +4,32 @@
       Sign Up For Activise
     </h5>
     <div class="card-panel">
-    <img class="logo-image" src="../assets/activyselogo.png" alt="A step ladder logo with a blue background">
-      <form name="contact">
+    <img class="logo-image" src="../assets/activyselogo.png" alt="A step ladder logo">
+      <form name="sign-up">
           <div class="input-field col s6">
             <i class="material-icons prefix">account_circle</i>
-            <input class="form-field" name="name" id="name" type="text" v-model="name" required/>
+            <input class="form-field validate" name="name" id="name" type="text" v-model="name" required/>
             <label class="form-label" for="name">
             Name:
             </label>
         </div>
           <div class="input-field col s6">
             <i class="material-icons prefix">mail_outline</i>
-            <input class="form-field" name="email" id="email" v-model="email" type="text" required/>
+            <input class="form-field validate" name="email" id="email" v-model="email" type="text" required/>
             <label class="form-label" for="email">
             Email:
             </label>
         </div>
         <div class="input-field col s6">
             <i class="material-icons prefix">lock</i>
-            <input class="form-field" name="password" id="password" type="password" v-model="password" required/>
+            <input class="form-field validate" name="password" id="password" type="password" v-model="password" required/>
             <label class="form-label" for="password">
             Password:
             </label>
         </div>
         <div class="input-field col s6">
             <i class="material-icons prefix">lock</i>
-            <input class="form-field" name="confirmPassword" id="confirmPassword" type="password" v-model="confirmPassword" password/>
+            <input class="form-field validate" name="confirmPassword" id="confirmPassword" type="password" v-model="confirmPassword" password/>
             <label class="form-label" for="confirmPassword">
             Confirm Password:
             </label>
