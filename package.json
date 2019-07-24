@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "backstop": "sleepms 5000 && backstop test",
+    "test:unit": "vue-cli-service test:unit",
+    "test:css": "run-p -r serve backstop"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -26,10 +28,13 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
+    "backstopjs": "^4.1.9",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "npm-run-all": "^4.1.5",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
+    "sleep-ms": "^2.0.1",
     "vue-template-compiler": "^2.5.21"
   }
 }
