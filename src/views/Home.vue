@@ -6,7 +6,7 @@ SOME HOME STUFF
 
 <script>
 export default {
-  name: "home",
+  name: 'home',
   components: {}
-};
+}
 </script>

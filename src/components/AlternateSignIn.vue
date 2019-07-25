@@ -33,10 +33,10 @@
 export default {
   data: () => ({
     valid: true,
-    email: "",
-    password: ""
+    email: '',
+    password: ''
   })
-};
+}
 </script>
 
 <style scoped lang="scss">

@@ -59,13 +59,13 @@
 export default {
   data: () => ({
     valid: true,
-    name: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
+    name: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
     ageConsent: false
   })
-};
+}
 </script>
 
 <style scoped lang="scss">
