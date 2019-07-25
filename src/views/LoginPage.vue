@@ -1,9 +1,9 @@
 <template>
   <div class="auth-page">
 
-    <!-- <SignIn/> -->
-    <!-- <SignUp/> -->
-    <AlternateSignIn/>
+    <SignIn v-if="hasAccount" v-bind:toggleSignUp="toggleSignUp"/>
+    <SignUp v-if="!hasAccount" v-bind:toggleSignUp="toggleSignUp"/>
+
   </div>
 </template>
 
@@ -11,16 +11,24 @@
 // @ is an alias to /src
 import SignIn from '../components/SignIn'
 import SignUp from '../components/SignUp'
-import AlternateSignIn from '../components/AlternateSignIn'
 
 export default {
   name: 'home',
   components: {
-    AlternateSignIn,
     SignIn,
     SignUp
+  },
+  data: () => ({
+    hasAccount: true
+  }),
+
+  methods: {
+    toggleSignUp () {
+      this.hasAccount = !this.hasAccount
+    }
   }
 }
+
 </script>
 <style>
 .auth-page {

@@ -49,7 +49,7 @@
 
       </form>
       <div class="">
-            Already have an account? <a @click="toggleSignIn()">Login</a>
+            Already have an account? <a v-on:click="toggleSignUp">Login</a>
         </div>
     </div>
   </div>
@@ -57,6 +57,10 @@
 
 <script>
 export default {
+  props: {
+    toggleSignUp: { type: Function }
+  },
+
   data: () => ({
     valid: true,
     name: '',

@@ -3,16 +3,16 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 Vue.use(Router)
 
-//temporary until we have auth set up.
-var authenticated = false;
+// temporary until we have auth set up.
+var authenticated = false
 
-//protected routes function. could get more detailed later.
-function guard(to, from, next){
-    if(authenticated) {
-        next(); 
-    } else{
-        next('/login');
-    }
+// protected routes function. could get more detailed later.
+function guard (to, from, next) {
+  if (authenticated) {
+    next()
+  } else {
+    next('/login')
+  }
 }
 
 export default new Router({
@@ -22,6 +22,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
+      beforeEnter: guard,
       component: Home
     },
     {
@@ -51,4 +52,4 @@ export default new Router({
         import(/* webpackChunkName: "about" */ './views/LoginPage.vue')
     }
   ]
-});
+})

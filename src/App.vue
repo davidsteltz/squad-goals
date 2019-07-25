@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <div id="nav" v-if="auth">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/counter">Counter</router-link> |
@@ -10,6 +10,15 @@
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    // temporary until auth is set up.
+    auth: false
+  })
+}
+</script>
 
 <style lang="scss">
 #app {

@@ -29,7 +29,7 @@
 
       </form>
       <div class="">
-            New here? <a @click="toggleSignIn()">Sign Up For An Account</a>
+            New here? <a @click="toggleSignUp">Sign Up For An Account</a>
         </div>
     </div>
   </div>
@@ -37,6 +37,9 @@
 
 <script>
 export default {
+  props: {
+    toggleSignUp: { type: Function }
+  },
   data: () => ({
     valid: true,
     name: '',
