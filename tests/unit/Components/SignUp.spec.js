@@ -1,4 +1,4 @@
-import { shallowMount } from '@vue/test-utils'
+import { mount, shallowMount } from '@vue/test-utils'
 import SignUp from '@/components/SignUp.vue'
 
 let wrapper
@@ -20,14 +20,21 @@ describe('SignUp', () => {
   test('is a Vue instance', () => {
     expect(wrapper.isVueInstance).toBeTruthy()
   })
+
   test('has 5 input-field classes', () => {
     expect(wrapper.findAll('.input-field').length).toBe(5)
   })
+
   test('clicking sign in triggers toggle function', () => {
     wrapper.vm.toggleSignUp = jest.fn()
     const signInLink = '#sign-in-link'
     wrapper.find(signInLink).trigger('click')
     expect(wrapper.vm.toggleSignUp).toBeCalled()
+  })
+
+  test('renders correctly', () => {
+    const fullRender = mount(SignUp)
+    expect(fullRender.element).toMatchSnapshot()
   })
 })
 
