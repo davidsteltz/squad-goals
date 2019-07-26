@@ -57,6 +57,8 @@
 
 <script>
 export default {
+  // Components should have names, so it can be used as a locator in tests
+  name: 'SignUpComponent',
   props: {
     toggleSignUp: { type: Function }
   },

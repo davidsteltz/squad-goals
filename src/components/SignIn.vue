@@ -37,6 +37,7 @@
 
 <script>
 export default {
+  name: 'SignInComponent',
   props: {
     toggleSignUp: { type: Function }
   },
