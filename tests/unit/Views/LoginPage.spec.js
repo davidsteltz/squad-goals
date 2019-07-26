@@ -1,18 +1,9 @@
 import { shallowMount } from '@vue/test-utils'
 import Login from '@/views/LoginPage.vue'
 
-let wrapper
-
-beforeEach(() => {
-  wrapper = shallowMount(Login)
-})
-
-afterEach(() => {
-  wrapper.destroy()
-})
-
 describe('LoginPage', () => {
   test('is a Vue instance', () => {
+    const wrapper = shallowMount(Login)
     expect(wrapper.isVueInstance).toBeTruthy()
   })
 
