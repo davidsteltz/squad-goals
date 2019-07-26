@@ -29,7 +29,7 @@
 
       </form>
       <div class="">
-            New here? <a @click="toggleSignUp">Sign Up For An Account</a>
+            New here? <a id="sign-up-link" @click="toggleSignUp">Sign Up For An Account</a>
         </div>
     </div>
   </div>

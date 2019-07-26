@@ -49,7 +49,7 @@
 
       </form>
       <div class="">
-            Already have an account? <a v-on:click="toggleSignUp">Login</a>
+            Already have an account? <a id="sign-in-link" v-on:click="toggleSignUp">Login</a>
         </div>
     </div>
   </div>
