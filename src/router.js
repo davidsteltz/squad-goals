@@ -1,17 +1,17 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from './views/Home.vue'
-Vue.use(Router)
+import Vue from 'vue';
+import Router from 'vue-router';
+import Home from './views/Home.vue';
+Vue.use(Router);
 
 // temporary until we have auth set up.
-var authenticated = false
+var authenticated = false;
 
 // protected routes function. could get more detailed later.
 function guard (to, from, next) {
   if (authenticated) {
-    next()
+    next();
   } else {
-    next('/login')
+    next('/login');
   }
 }
 
@@ -52,4 +52,4 @@ export default new Router({
         import(/* webpackChunkName: "about" */ './views/LoginPage.vue')
     }
   ]
-})
+});

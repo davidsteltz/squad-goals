@@ -1,12 +1,12 @@
-import { interval } from 'rxjs'
+import { interval } from 'rxjs';
 
 class TimerService {
   constructor () {
-    this.$timer = interval(100)
+    this.$timer = interval(100);
   }
 }
 
-const GlobalTimer = new TimerService()
+const GlobalTimer = new TimerService();
 
-export default TimerService
-export { GlobalTimer }
+export default TimerService;
+export { GlobalTimer };

@@ -8,5 +8,5 @@ SOME HOME STUFF
 export default {
   name: 'home',
   components: {}
-}
+};
 </script>

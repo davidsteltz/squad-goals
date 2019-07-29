@@ -71,7 +71,7 @@ export default {
     confirmPassword: '',
     ageConsent: false
   })
-}
+};
 </script>
 
 <style scoped lang="scss">

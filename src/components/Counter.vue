@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import CounterService, { GlobalCounter } from '../services/CounterService'
+import CounterService, { GlobalCounter } from '../services/CounterService';
 
 export default {
   name: 'Counter',
@@ -23,35 +23,35 @@ export default {
     return {
       count: 0,
       globalCount: 0
-    }
+    };
   },
   methods: {
     restart: function () {
-      this.counterService.reset()
+      this.counterService.reset();
     },
     add: function (scope) {
-      if (scope === 'global') return GlobalCounter.add()
-      return this.counterService.add()
+      if (scope === 'global') return GlobalCounter.add();
+      return this.counterService.add();
     },
     sub: function (scope) {
-      if (scope === 'global') return GlobalCounter.subtract()
-      return this.counterService.subtract()
+      if (scope === 'global') return GlobalCounter.subtract();
+      return this.counterService.subtract();
     }
   },
   created () {
-    this.counterService = new CounterService()
+    this.counterService = new CounterService();
 
     this.counterSub = this.counterService.counter$
-      .subscribe((v) => { this.count = v })
+      .subscribe((v) => { this.count = v; });
 
     this.globalSub = GlobalCounter.counter$
-      .subscribe((v) => { this.globalCount = v })
+      .subscribe((v) => { this.globalCount = v; });
   },
   destroyed () {
-    this.counterSub.unsubscribe()
-    this.globalSub.unsubscribe()
+    this.counterSub.unsubscribe();
+    this.globalSub.unsubscribe();
   }
-}
+};
 </script>
 
 <style scoped>

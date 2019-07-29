@@ -17,7 +17,7 @@ export default {
     // temporary until auth is set up.
     auth: false
   })
-}
+};
 </script>
 
 <style lang="scss">
