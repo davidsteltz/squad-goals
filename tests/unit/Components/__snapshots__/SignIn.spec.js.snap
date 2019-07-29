@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignIn renders correctly 1`] = `
+<div
+  class="auth-container"
+>
+  <h5
+    class="title"
+  >
+    
+    Welcome To Activise
+  
+  </h5>
+   
+  <div
+    class="card-panel"
+  >
+    <img
+      alt="A step ladder logo"
+      class="logo-image"
+      src="../assets/activyselogo.png"
+    />
+     
+    <form
+      name="sign-in"
+    >
+      <div
+        class="input-field col s6"
+      >
+        <i
+          class="material-icons prefix"
+        >
+          mail_outline
+        </i>
+         
+        <input
+          class="form-field"
+          id="email"
+          name="email"
+          required="required"
+          type="text"
+        />
+         
+        <label
+          class="form-label"
+          for="email"
+        >
+          
+          Email:
+          
+        </label>
+      </div>
+       
+      <div
+        class="input-field col s6"
+      >
+        <i
+          class="material-icons prefix"
+        >
+          lock
+        </i>
+         
+        <input
+          class="form-field"
+          id="password"
+          name="password"
+          required="required"
+          type="password"
+        />
+         
+        <label
+          class="form-label"
+          for="password"
+        >
+          
+          Password:
+          
+        </label>
+      </div>
+       
+      <div
+        class="submit"
+      >
+        <button
+          class="btn waves-effect waves-light"
+          name="action"
+          type="submit"
+        >
+          Sign In
+              
+          <i
+            class="material-icons right"
+          >
+            send
+          </i>
+        </button>
+      </div>
+    </form>
+     
+    <div>
+      
+          New here? 
+      <a
+        id="sign-up-link"
+      >
+        Sign Up For An Account
+      </a>
+    </div>
+  </div>
+</div>
+`;

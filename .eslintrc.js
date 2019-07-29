@@ -10,6 +10,8 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    // Enable this rule to use semi-colons
+    // semi: [1, 'always']
   },
   parserOptions: {
     parser: 'babel-eslint'

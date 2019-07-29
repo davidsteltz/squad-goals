@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUp renders correctly 1`] = `
+<div
+  class="auth-container"
+>
+  <h5
+    class="title"
+  >
+    
+    Sign Up For Activise
+  
+  </h5>
+   
+  <div
+    class="card-panel"
+  >
+    <img
+      alt="A step ladder logo"
+      class="logo-image"
+      src="../assets/activyselogo.png"
+    />
+     
+    <form
+      name="sign-up"
+    >
+      <div
+        class="input-field col s6"
+      >
+        <i
+          class="material-icons prefix"
+        >
+          account_circle
+        </i>
+         
+        <input
+          class="form-field validate"
+          id="name"
+          name="name"
+          required="required"
+          type="text"
+        />
+         
+        <label
+          class="form-label"
+          for="name"
+        >
+          
+          Name:
+          
+        </label>
+      </div>
+       
+      <div
+        class="input-field col s6"
+      >
+        <i
+          class="material-icons prefix"
+        >
+          mail_outline
+        </i>
+         
+        <input
+          class="form-field validate"
+          id="email"
+          name="email"
+          required="required"
+          type="text"
+        />
+         
+        <label
+          class="form-label"
+          for="email"
+        >
+          
+          Email:
+          
+        </label>
+      </div>
+       
+      <div
+        class="input-field col s6"
+      >
+        <i
+          class="material-icons prefix"
+        >
+          lock
+        </i>
+         
+        <input
+          class="form-field validate"
+          id="password"
+          name="password"
+          required="required"
+          type="password"
+        />
+         
+        <label
+          class="form-label"
+          for="password"
+        >
+          
+          Password:
+          
+        </label>
+      </div>
+       
+      <div
+        class="input-field col s6"
+      >
+        <i
+          class="material-icons prefix"
+        >
+          lock
+        </i>
+         
+        <input
+          class="form-field validate"
+          id="confirmPassword"
+          name="confirmPassword"
+          password=""
+          type="password"
+        />
+         
+        <label
+          class="form-label"
+          for="confirmPassword"
+        >
+          
+          Confirm Password:
+          
+        </label>
+      </div>
+       
+      <div
+        class="input-field col s6"
+      >
+        <label>
+          <input
+            id="indeterminate-checkbox"
+            type="checkbox"
+          />
+           
+          <span>
+            Over 13 Years Of Age?
+          </span>
+        </label>
+      </div>
+       
+      <div
+        class="submit"
+      >
+        <button
+          class="btn waves-effect waves-light"
+          name="action"
+          type="submit"
+        >
+          Submit
+              
+          <i
+            class="material-icons right"
+          >
+            send
+          </i>
+        </button>
+      </div>
+    </form>
+     
+    <div>
+      
+          Already have an account? 
+      <a
+        id="sign-in-link"
+      >
+        Login
+      </a>
+    </div>
+  </div>
+</div>
+`;
