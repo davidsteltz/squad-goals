@@ -28,4 +28,29 @@
     }
   }
 }
+body, #app {
+  height: 100vh;
+  margin: 0;
+  background:#2c3e50 !important;
+  color: #eeeeee;
+}
+#nav a {
+  color: #fff;
+}
+button {
+    font-size: 18px;
+    margin: 5px;
+    border: 2px solid #333333;
+    padding: 10px 20px;
+    border-radius: 300px;
+    background: #eeeeee;
+    color: #333333;
+    transition: .4s;
+}
+button:hover {
+  background: #dddddd;
+  color: #000000;
+  transition: .2s;
+  cursor: pointer;
+}
 </style>
